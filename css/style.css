@@ -232,6 +232,20 @@ footer { background: var(--black); color: rgba(255,255,255,0.65); padding: 56px 
 }
 .img-placeholder svg { opacity: 0.35; }
 
+/* ── IMAGE THUMBNAILS ── */
+img.event-thumb,
+img.about-img,
+img.blog-thumb {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  background: var(--light-gray);
+  border-radius: 6px 6px 0 0;
+}
+img.event-thumb { aspect-ratio: 4/3; }
+img.about-img { aspect-ratio: 4/3; border-radius: 6px; }
+img.blog-thumb { aspect-ratio: 16/9; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 960px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
