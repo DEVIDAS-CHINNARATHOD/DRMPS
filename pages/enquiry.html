@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry — Dr. Ramarao Maharaj Primary School</title>
+  <meta name="description" content="Send an admission enquiry to Dr. Ramarao Maharaj Primary School, Paltya Tanda, Chincholi, Kalaburagi." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* ── ENQUIRY-SPECIFIC STYLES ── */
+
+    .enquiry-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 56px; align-items: start;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 6px; padding: 36px;
+    }
+    .form-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 24px; }
+    .form-group { margin-bottom: 18px; }
+    label {
+      display: block; font-size: 0.77rem; font-weight: 600;
+      color: var(--black); margin-bottom: 6px; letter-spacing: 0.2px;
+    }
+    label span { color: var(--orange); }
+    input, select, textarea {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid var(--border); border-radius: 4px;
+      font-family: 'Poppins', sans-serif; font-size: 0.85rem;
+      color: var(--black); background: var(--white);
+      transition: border-color 0.2s; outline: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--orange); }
+    textarea { resize: vertical; min-height: 110px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .form-error {
+      display: none; background: #fff5f5; border: 1.5px solid #fca5a5;
+      border-radius: 4px; padding: 12px 16px; font-size: 0.82rem;
+      color: #b91c1c; margin-top: 14px;
+    }
+    .form-success {
+      display: none; background: #f0fdf4; border: 1.5px solid #86efac;
+      border-radius: 4px; padding: 14px 18px; font-size: 0.84rem;
+      color: #166534; margin-top: 14px; line-height: 1.7;
+    }
+
+    /* Info side */
+    .enquiry-info h3 { font-size: 1rem; font-weight: 700; margin-bottom: 22px; }
+    .contact-item {
+      display: flex; gap: 14px; align-items: flex-start; margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 42px; height: 42px; background: var(--orange);
+      border-radius: 5px; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0; color: white;
+      font-size: 1.05rem;
+    }
+    .contact-label {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; color: var(--gray); margin-bottom: 3px;
+    }
+    .contact-value {
+      font-size: 0.87rem; font-weight: 500; color: var(--black); line-height: 1.6;
+    }
+    .contact-value a { color: var(--orange); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+
+    .info-notice {
+      background: var(--light-gray); border-left: 3px solid var(--orange);
+      border-radius: 4px; padding: 20px; margin-top: 28px;
+    }
+    .info-notice p { font-size: 0.79rem; color: var(--gray); line-height: 1.75; }
+    .info-notice strong { color: var(--black); }
+
+    .map-placeholder {
+      margin-top: 22px; border: 1px solid var(--border);
+      border-radius: 6px; aspect-ratio: 4/3;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px; background: var(--light-gray);
+      font-size: 0.75rem; color: var(--gray);
+    }
+
+    @media (max-width: 960px) {
+      .enquiry-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+      .form-card { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── TOPBAR ── -->
+  <div class="topbar">
+    📍 Paltya Tanda, Seri Cross, Salgar Basantpur, Chincholi, Kalaburagi &nbsp;|&nbsp;
+    📞 <a href="tel:7483586279">7483586279</a> &nbsp;|&nbsp;
+    Admissions Open 2026–27 · LKG to 8th Std.
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <img src="../images/Saraswati_Devi.png" alt="Saraswati Devi" class="header-logo" title="Saraswati Devi" />
+      <div class="school-identity">
+        <p class="org-name">Jagath Janani Krishi &amp; Gramina Abhivrudhi Samsthe (R)</p>
+        <h1>Dr. Ramarao Maharaj Primary School</h1>
+        <span class="kannada-name">ಡಾ. ರಾಮರಾವ ಮಹಾರಾಜ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ</span>
+        <p class="location">Paltya Tanda, Seri Cross, Salgar Basantpur, Taluk Chincholi, Dist. Kalaburagi</p>
+      </div>
+      <img src="../images/maharaj.png" alt="Dr. Ramarao Maharaj" class="header-logo" title="Dr. Ramarao Maharaj" />
+    </div>
+  </header>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="enquiry.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="section-label">Get In Touch</p>
+    <h2>Send an Enquiry</h2>
+    <p>We'll get back to you as soon as possible.</p>
+  </div>
+
+  <!-- MAIN SECTION -->
+  <section>
+    <div class="section-inner">
+      <div class="enquiry-grid">
+
+        <!-- FORM -->
+        <div class="form-card">
+          <h3>Admission Enquiry Form</h3>
+          <form id="enquiryForm" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name <span>*</span></label>
+              <input type="text" id="name" name="name" placeholder="Parent or guardian's full name" autocomplete="name" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span>*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="10-digit mobile" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="altPhone">Alternate Phone</label>
+                <input type="tel" id="altPhone" name="altPhone" placeholder="Optional" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="studentName">Student's Name</label>
+              <input type="text" id="studentName" name="studentName" placeholder="Child's name" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="classInt">Class Interested In <span>*</span></label>
+                <select id="classInt" name="classInt">
+                  <option value="">— Select Class —</option>
+                  <option>LKG</option>
+                  <option>UKG</option>
+                  <option>1st Standard</option>
+                  <option>2nd Standard</option>
+                  <option>3rd Standard</option>
+                  <option>4th Standard</option>
+                  <option>5th Standard</option>
+                  <option>6th Standard</option>
+                  <option>7th Standard</option>
+                  <option>8th Standard</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="hostel">Hostel Required?</label>
+                <select id="hostel" name="hostel">
+                  <option value="">— Select —</option>
+                  <option>Yes, hostel needed</option>
+                  <option>No, day scholar</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="village">Village / Town</label>
+              <input type="text" id="village" name="village" placeholder="Where are you from?" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Questions</label>
+              <textarea id="message" name="message" placeholder="Any specific questions, requirements, or additional information..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Submit Enquiry
+            </button>
+
+            <div class="form-error" id="formError"></div>
+            <div class="form-success" id="formSuccess">
+              ✅ <strong>Thank you for your enquiry!</strong><br>
+              We have received your message and will contact you shortly on the phone number you provided. If urgent, please call us directly at <strong>7483586279</strong>.
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="enquiry-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <p class="contact-label">Phone Numbers</p>
+              <p class="contact-value">
+                <a href="tel:7483586279">7483586279</a><br>
+                <a href="tel:9741617557">9741617557</a><br>
+                <a href="tel:9321771082">9321771082</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <p class="contact-label">School Address</p>
+              <p class="contact-value">
+                Paltya Tanda, Seri Cross,<br>
+                Salgar Basantpur,<br>
+                Taluk Chincholi,<br>
+                District Kalaburagi, Karnataka
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🏛️</div>
+            <div>
+              <p class="contact-label">President</p>
+              <p class="contact-value">Sri Motiram Nayak<br>(President, Jagath Janani Samsthe)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <p class="contact-label">School Hours</p>
+              <p class="contact-value">Monday – Saturday<br>9:00 AM to 5:00 PM</p>
+            </div>
+          </div>
+
+          <div class="info-notice">
+            <p>
+              <strong>Summer Camp 2026 starts April 1</strong><br>
+              Students from Class 3–5 can join early for dedicated Navodaya entrance exam coaching. Hostel facility available with meals. Contact us to book your seat before it fills up.
+            </p>
+          </div>
+
+          <div class="map-placeholder">
+            <span style="font-size:1.4rem;">🗺</span>
+            Map Placeholder<br>
+            <small>Embed Google Map here</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Dr. Ramarao Maharaj Primary School</h3>
+          <p>A Kannada-medium school dedicated to quality education and grooming children from rural Karnataka for Navodaya, Sainik Schools, and beyond.</p>
+          <div class="social-icons">
+            <a class="social-icon" href="#" title="Facebook">f</a>
+            <a class="social-icon" href="#" title="YouTube">▶</a>
+            <a class="social-icon" href="#" title="WhatsApp">✉</a>
+            <a class="social-icon" href="#" title="Instagram">◎</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="admissions.html">LKG &amp; UKG</a></li>
+            <li><a href="admissions.html">Primary (1st–5th)</a></li>
+            <li><a href="admissions.html">Upper Primary (6th–8th)</a></li>
+            <li><a href="admissions.html">Navodaya Coaching</a></li>
+            <li><a href="admissions.html">Hostel Facility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:7483586279">📞 7483586279</a></li>
+            <li><a href="tel:9741617557">📞 9741617557</a></li>
+            <li><a href="tel:9321771082">📞 9321771082</a></li>
+            <li><a href="#">Paltya Tanda, Seri Cross</a></li>
+            <li><a href="#">Salgar Basantpur, Chincholi</a></li>
+            <li><a href="#">Dist. Kalaburagi, Karnataka</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Ramarao Maharaj Primary School. All rights reserved.</p>
+        <p>Made with ❤️ for <span class="orange">Kalaburagi</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/enquiry.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions — Dr. Ramarao Maharaj Primary School</title>
+  <meta name="description" content="Admissions open for LKG to 8th Standard at Dr. Ramarao Maharaj Primary School, Paltya Tanda, Chincholi, Kalaburagi. Kannada medium with hostel facility." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    /* ── ADMISSIONS-SPECIFIC STYLES ── */
+
+    /* Classes grid */
+    .classes-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 12px; margin-bottom: 52px;
+    }
+    .class-card {
+      border: 2px solid var(--border); border-radius: 6px;
+      padding: 22px 12px; text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .class-card:hover {
+      border-color: var(--orange);
+      box-shadow: 0 4px 14px rgba(232,96,10,0.1);
+    }
+    .class-card .class-lbl {
+      font-size: 0.62rem; color: var(--gray);
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;
+    }
+    .class-card .class-name { font-size: 1.15rem; font-weight: 800; }
+    .class-card .class-sub { font-size: 0.68rem; color: var(--gray); margin-top: 4px; }
+    .class-card.featured { border-color: var(--orange); }
+    .class-card.featured .class-name { color: var(--orange); }
+
+    /* Two-col info layout */
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+
+    /* Info block */
+    .info-block { margin-bottom: 32px; }
+    .info-block h3 {
+      font-size: 0.97rem; font-weight: 700; margin-bottom: 16px;
+      padding-bottom: 10px; border-bottom: 2px solid var(--border);
+    }
+    .info-list { list-style: none; }
+    .info-list li {
+      font-size: 0.83rem; color: var(--gray);
+      padding: 9px 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .info-list li::before { content: "→"; color: var(--orange); font-weight: 700; }
+
+    /* Apply card */
+    .apply-card {
+      background: var(--black); color: var(--white);
+      border-radius: 6px; padding: 32px; text-align: center;
+      margin-bottom: 20px;
+    }
+    .apply-card h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+    .apply-card p { font-size: 0.82rem; opacity: 0.6; margin-bottom: 20px; }
+    .apply-card .phones { margin-bottom: 24px; }
+    .apply-card .phones a {
+      display: block; font-size: 1.05rem; font-weight: 700;
+      color: var(--orange); text-decoration: none; margin-bottom: 4px;
+    }
+    .apply-card .phones a:hover { text-decoration: underline; }
+
+    /* Notice box */
+    .notice-box {
+      border: 1.5px dashed var(--border); border-radius: 6px;
+      padding: 22px; text-align: center;
+    }
+    .notice-box p { font-size: 0.78rem; color: var(--gray); line-height: 1.75; }
+    .notice-box strong { color: var(--black); }
+
+    /* Process steps */
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .step {
+      padding: 28px 20px; border: 1px solid var(--border);
+      border-right: none; text-align: center;
+    }
+    .step:last-child { border-right: 1px solid var(--border); }
+    .step-num {
+      width: 40px; height: 40px; background: var(--orange);
+      border-radius: 50%; color: var(--white);
+      font-size: 0.9rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+    }
+    .step h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; }
+    .step p { font-size: 0.76rem; color: var(--gray); }
+
+    @media (max-width: 960px) {
+      .classes-grid { grid-template-columns: repeat(3, 1fr); }
+      .info-grid    { grid-template-columns: 1fr; }
+      .steps-grid   { grid-template-columns: repeat(2, 1fr); }
+      .step { border-right: 1px solid var(--border); }
+    }
+    @media (max-width: 640px) {
+      .classes-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid   { grid-template-columns: 1fr; }
+      .step { border-right: 1px solid var(--border); border-bottom: none; }
+      .step:last-child { border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── TOPBAR ── -->
+  <div class="topbar">
+    📍 Paltya Tanda, Seri Cross, Salgar Basantpur, Chincholi, Kalaburagi &nbsp;|&nbsp;
+    📞 <a href="tel:7483586279">7483586279</a> &nbsp;|&nbsp;
+    Admissions Open 2026–27 · LKG to 8th Std.
+  </div>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <img src="../images/Saraswati_Devi.png" alt="Saraswati Devi" class="header-logo" title="Saraswati Devi" />
+      <div class="school-identity">
+        <p class="org-name">Jagath Janani Krishi &amp; Gramina Abhivrudhi Samsthe (R)</p>
+        <h1>Dr. Ramarao Maharaj Primary School</h1>
+        <span class="kannada-name">ಡಾ. ರಾಮರಾವ ಮಹಾರಾಜ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ</span>
+        <p class="location">Paltya Tanda, Seri Cross, Salgar Basantpur, Taluk Chincholi, Dist. Kalaburagi</p>
+      </div>
+      <img src="../images/maharaj.png" alt="Dr. Ramarao Maharaj" class="header-logo" title="Dr. Ramarao Maharaj" />
+    </div>
+  </header>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-inner">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="enquiry.html" class="nav-cta">Apply Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════ MAIN CONTENT ══════════════ -->
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="section-label">2026–27</p>
+    <h2>Admissions Open</h2>
+    <p>Kannada Medium · LKG to 8th Standard · Residential Facility Available</p>
+  </div>
+
+  <!-- CLASSES SECTION -->
+  <section>
+    <div class="section-inner">
+      <p class="section-label">Classes Available</p>
+      <h2 class="section-title">We Offer Classes From LKG to 8th Standard</h2>
+      <p class="section-sub">All classes taught in Kannada medium. Special Navodaya &amp; Sainik School entrance exam coaching available from Class 3 onwards.</p>
+
+      <div class="classes-grid">
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">LKG</p><p class="class-sub">Lower Kindergarten</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">UKG</p><p class="class-sub">Upper Kindergarten</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">1st</p><p class="class-sub">Standard 1</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">2nd</p><p class="class-sub">Standard 2</p></div>
+        <div class="class-card featured"><p class="class-lbl">Class</p><p class="class-name">3rd</p><p class="class-sub">+ Navodaya Prep</p></div>
+        <div class="class-card featured"><p class="class-lbl">Class</p><p class="class-name">4th</p><p class="class-sub">+ Navodaya Prep</p></div>
+        <div class="class-card featured"><p class="class-lbl">Class</p><p class="class-name">5th</p><p class="class-sub">+ Navodaya Prep</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">6th</p><p class="class-sub">Standard 6</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">7th</p><p class="class-sub">Standard 7</p></div>
+        <div class="class-card"><p class="class-lbl">Class</p><p class="class-name">8th</p><p class="class-sub">Standard 8</p></div>
+      </div>
+
+      <div class="info-grid">
+        <div>
+          <div class="info-block">
+            <h3>Facilities Provided</h3>
+            <ul class="info-list">
+              <li>Residential hostel with nutritious meals</li>
+              <li>Experienced and dedicated teaching staff</li>
+              <li>Navodaya Vidyalaya entrance coaching</li>
+              <li>Sainik School entrance exam preparation</li>
+              <li>Safe, disciplined campus environment</li>
+              <li>Regular progress assessments &amp; tests</li>
+              <li>Extra-curricular activities &amp; sports</li>
+              <li>Clean drinking water &amp; proper sanitation</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>Key Dates — 2026–27</h3>
+            <ul class="info-list">
+              <li>Applications — Now open, limited seats</li>
+              <li>Summer camp begins — April 1, 2026</li>
+              <li>Regular academic year — June 2026</li>
+              <li>Navodaya coaching — Ongoing throughout year</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="apply-card">
+            <h3>Contact to Apply</h3>
+            <p>Reach us directly to enquire about seats, fee structure, and the admission process.</p>
+            <div class="phones">
+              <a href="tel:7483586279">📞 7483586279</a>
+              <a href="tel:9741617557">📞 9741617557</a>
+              <a href="tel:9321771082">📞 9321771082</a>
+            </div>
+            <a href="enquiry.html" class="btn btn-primary" style="width:100%;display:block;text-align:center;">Fill Enquiry Form</a>
+          </div>
+          <div class="notice-box">
+            <p>
+              <strong>President: Sri Motiram Nayak</strong><br>
+              Located at Paltya Tanda, Seri Cross, Salgar Basantpur,<br>
+              Chincholi Taluk, Kalaburagi District, Karnataka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSION PROCESS -->
+  <section class="bg-light">
+    <div class="section-inner">
+      <p class="section-label">How to Apply</p>
+      <h2 class="section-title">Simple Admission Process</h2>
+      <p class="section-sub">Getting your child admitted is straightforward. Follow these four steps to secure a seat.</p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Call or Enquire</h4>
+          <p>Call us or fill in the online enquiry form with your child's details and class preference.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Visit the School</h4>
+          <p>Schedule a visit to the campus to meet the teachers and understand the facilities in person.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Submit Documents</h4>
+          <p>Provide birth certificate, previous school records, and a passport-size photo of the student.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Confirm Admission</h4>
+          <p>Complete the fee payment and confirm your child's seat. Hostel booking is done at this stage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <h2>Limited Seats Available</h2>
+    <p>Don't miss the opportunity. Summer camp begins April 1, 2026. Contact us now to secure your child's seat.</p>
+    <a href="enquiry.html" class="btn btn-white">Send Enquiry</a>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Dr. Ramarao Maharaj Primary School</h3>
+          <p>A Kannada-medium school dedicated to quality education and grooming children from rural Karnataka for Navodaya, Sainik Schools, and beyond.</p>
+          <div class="social-icons">
+            <a class="social-icon" href="#" title="Facebook">f</a>
+            <a class="social-icon" href="#" title="YouTube">▶</a>
+            <a class="social-icon" href="#" title="WhatsApp">✉</a>
+            <a class="social-icon" href="#" title="Instagram">◎</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="admissions.html">LKG &amp; UKG</a></li>
+            <li><a href="admissions.html">Primary (1st–5th)</a></li>
+            <li><a href="admissions.html">Upper Primary (6th–8th)</a></li>
+            <li><a href="admissions.html">Navodaya Coaching</a></li>
+            <li><a href="admissions.html">Hostel Facility</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:7483586279">📞 7483586279</a></li>
+            <li><a href="tel:9741617557">📞 9741617557</a></li>
+            <li><a href="tel:9321771082">📞 9321771082</a></li>
+            <li><a href="#">Paltya Tanda, Seri Cross</a></li>
+            <li><a href="#">Salgar Basantpur, Chincholi</a></li>
+            <li><a href="#">Dist. Kalaburagi, Karnataka</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Ramarao Maharaj Primary School. All rights reserved.</p>
+        <p>Made with ❤️ for <span class="orange">Kalaburagi</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
