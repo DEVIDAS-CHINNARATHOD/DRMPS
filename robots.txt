@@ -1,0 +1,8 @@
+# Dr. Ramarao Maharaj Primary School
+# https://drmps.vercel.app/
+
+User-agent: *
+Allow: /
+Disallow: /.git/
+
+Sitemap: https://drmps.vercel.app/sitemap.xml
