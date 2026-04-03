@@ -237,14 +237,12 @@ img.event-thumb,
 img.about-img,
 img.blog-thumb {
   width: 100%;
-  object-fit: cover;
   display: block;
   background: var(--light-gray);
-  border-radius: 6px 6px 0 0;
 }
-img.event-thumb { aspect-ratio: 4/3; }
-img.about-img { aspect-ratio: 4/3; border-radius: 6px; }
-img.blog-thumb { aspect-ratio: 16/9; }
+img.event-thumb { aspect-ratio: 4/3; object-fit: cover; border-radius: 6px 6px 0 0; }
+img.about-img { aspect-ratio: 4/3; object-fit: cover; border-radius: 6px; }
+img.blog-thumb { width: 100%; object-fit: contain; border-radius: 6px 6px 0 0; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 960px) {
