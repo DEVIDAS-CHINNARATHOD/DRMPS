@@ -1,263 +1,59 @@
-# Dr. Ramarao Maharaj Primary School — Website
-
-A clean, minimal, and professional school website built with pure HTML, CSS, and JavaScript. No frameworks, no dependencies except Google Fonts.
-
----
-
-## 📁 Project Structure
-
-```
-school-website/
-│
-├── index.html                  ← Homepage (entry point)
-│
-├── pages/
-│   ├── admissions.html         ← Admissions page
-│   ├── enquiry.html            ← Enquiry / Contact form page
-│   └── blog.html               ← Blog / News page
-│
-├── css/
-│   └── style.css               ← Shared stylesheet (all pages use this)
-│
-├── js/
-│   ├── main.js                 ← Shared JS: nav toggle, active link detection
-│   └── enquiry.js              ← Form validation and submission handler
-│
-├── images/                     ← (Empty) Place your images here
-│   ├── logo-saraswati.png      ← Saraswati image for header (replace placeholder)
-│   ├── maharaj.png             ← Dr. Ramarao Maharaj photo for header
-│   ├── campus.jpg              ← School campus / building photo
-│   ├── events/                 ← Event photos (event-1.jpg, event-2.jpg, ...)
-│   └── blog/                   ← Blog post thumbnail images
-│
-└── README.md                   ← This file
-```
+<div align="center">
+  <img src="images/headerlogo.png" alt="Header Logo" width="800" />
+  
+  <h1>Dr. Ramarao Maharaj Primary School</h1>
+  <p><strong>Paltya Tanda, Seri Cross, Salgar Basantpur, Taluk Chincholi, Dist. Kalaburagi, Karnataka</strong></p>
+</div>
 
 ---
 
-## 🎨 Design System
+<div align="center">
+  <img src="images/School.png" alt="School Campus Main View" width="800" style="border-radius: 8px;" />
+</div>
 
-| Token         | Value     | Usage                        |
-|---------------|-----------|------------------------------|
-| `--orange`    | `#E8600A` | Primary accent, buttons, CTA |
-| `--orange-dark` | `#C04F06` | Hover states                |
-| `--black`     | `#111111` | Text, backgrounds            |
-| `--gray`      | `#444444` | Body text, subtitles         |
-| `--light-gray`| `#F5F5F5` | Alternate section backgrounds|
-| `--border`    | `#E0E0E0` | Card borders, dividers       |
-| `--white`     | `#ffffff` | Backgrounds, text on dark    |
+## About the School
 
-**Fonts (loaded from Google Fonts):**
-- `Poppins` — main interface font (300, 400, 500, 600, 700, 800)
-- `Noto Sans Kannada` — for Kannada text in the header (400, 600, 700)
+Founded under the Jagath Janani Krishi & Gramina Abhivrudhi Samsthe, **Dr. Ramarao Maharaj Primary School** is a dedicated educational institution providing quality Kannada-medium education to students in rural Kalaburagi.
 
----
+We offer a structured and comprehensive curriculum aligned with the Karnataka State Board from LKG to 8th Standard. Along with academic excellence, the school provides a nurturing residential environment and specialized coaching to help students excel and secure admissions into prestigious institutions like Jawahar Navodaya Vidyalaya and Sainik Schools.
 
-## 📄 Pages
-
-### 1. `index.html` — Homepage
-- Topbar with address and phone
-- Header: Saraswati image | School name (English + Kannada) | Maharaj photo
-- Sticky navigation bar with hamburger menu for mobile
-- **Hero** section with tagline and CTA buttons
-- **Stats bar** (Navodaya selections, classes, medium, hostel)
-- **About** section with 2-column layout
-- **Features** section (4 cards)
-- **Recent Events** gallery (6 cards + YouTube embed placeholder)
-- **CTA Banner** for admissions
-- Footer with 4 columns
-
-### 2. `pages/admissions.html` — Admissions
-- Page hero (dark background)
-- 10 class cards: LKG, UKG, 1st–8th (Classes 3–5 highlighted for Navodaya)
-- Facilities list + key dates
-- Apply card with phone numbers
-- 4-step admission process section
-- CTA banner
-
-### 3. `pages/enquiry.html` — Enquiry / Contact
-- Page hero
-- **Left:** Enquiry form with fields:
-  - Full Name (required)
-  - Phone Number + Alternate Phone
-  - Student's Name
-  - Class Interested (dropdown)
-  - Hostel Required (dropdown)
-  - Village / Town
-  - Message / Questions
-- Client-side validation with error and success messages
-- **Right:** Contact info (phone, address, head teacher, hours), notice box, map placeholder
-
-### 4. `pages/blog.html` — Blog
-- Page hero
-- Category filter buttons (UI only, extend with JS for filtering)
-- 1 featured blog post (wide card, 2-column)
-- 6 standard blog cards in a 3-column grid
-- CTA banner
+### Key Features
+* **Quality Education:** Kannada-medium classes focused on complete conceptual understanding and deep foundational learning.
+* **Specialized Coaching:** Dedicated daily training for Class 3, 4, and 5 students specifically targeting Navodaya and Sainik School entrance exams.
+* **Hostel Facility:** Secure and disciplined residential accommodation complete with wholesome meals and dedicated study supervision.
+* **Exceptional Results:** A proud and strong track record of successful student selections year after year.
 
 ---
 
-## 🚀 How to Use
+## Navodaya & Sainik School Selections
 
-### Open Locally
-No server required. Just open `index.html` in any modern browser.
+We take immense pride in our students who have consistently cleared the highly competitive Navodaya Vidyalaya and Sainik School entrance exams. Their remarkable success is a true testament to their unwavering hard work and our faculty's dedicated coaching.
 
-```
-Double-click  →  index.html
-```
-
-All internal links work relatively, so navigation between pages works without a server.
-
-### Deploy Online
-Upload the entire `school-website/` folder to any web host:
-- **cPanel hosting** — Upload via File Manager to `public_html/`
-- **GitHub Pages** — Push to a repo, enable Pages from Settings
-- **Netlify / Vercel** — Drag and drop the folder
+<div align="center">
+  <img src="images/navodatya2026.png" alt="Navodaya Selected Students" width="800" style="border-radius: 8px; border: 2px solid #ddd;" />
+  <p><em>Our bright stars selected for Navodaya & Sainik Schools</em></p>
+</div>
 
 ---
 
-## 🖼 Replacing Image Placeholders
+## Recent Events & Campus Life
 
-Currently all image slots show a dashed placeholder box. To replace them:
+Our school strongly believes in the holistic development of every child. We enthusiastically celebrate national holidays, cultural events, and annual sports days to build character, teamwork, confidence, and leadership skills among the students.
 
-### Header Images (Saraswati + Maharaj)
-In every HTML file, find:
-```html
-<div class="logo-placeholder">Saraswati Image</div>
-```
-Replace with:
-```html
-<img src="images/logo-saraswati.png" alt="Saraswati" class="logo-img" style="width:70px;height:70px;border-radius:50%;object-fit:cover;" />
-```
-
-### Event Photos (`index.html`)
-Find each:
-```html
-<div class="img-placeholder event-thumb">...</div>
-```
-Replace with:
-```html
-<img src="images/events/event-1.jpg" alt="Navodaya Selection 2025" style="width:100%;aspect-ratio:4/3;object-fit:cover;" />
-```
-
-### Blog Thumbnails (`pages/blog.html`)
-Same pattern — replace `.img-placeholder.blog-thumb` divs with `<img>` tags.
+<div align="center">
+  <img src="images/event2.jpeg" alt="Annual Sports and Cultural Day" width="400" style="border-radius: 8px; margin: 10px;" />
+  <img src="images/event3.jpg" alt="Republic Day Celebrations" width="400" style="border-radius: 8px; margin: 10px;" />
+  <p><em>Glimpses of Annual Day and Republic Day Celebrations</em></p>
+</div>
 
 ---
 
-## 📹 Embedding a YouTube Video
+## Contact Information
 
-In `index.html`, find the comment inside `.yt-wrapper`:
-```html
-<!--
-  TO EMBED A YOUTUBE VIDEO: Replace the block below with:
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-    title="School Video" frameborder="0" allowfullscreen></iframe>
--->
-```
-1. Go to YouTube → your video → Share → Embed
-2. Copy the `src` URL (e.g. `https://www.youtube.com/embed/dQw4w9WgXcQ`)
-3. Replace `YOUR_VIDEO_ID` in the comment and uncomment the `<iframe>`
-4. Delete the placeholder icon/label div
+* **Address:** Paltya Tanda, Seri Cross, Salgar Basantpur, Chincholi, Dist. Kalaburagi, Karnataka - 585307
+* **Contact Numbers:** +91-7483586279, +91-9741617557, +91-9321771082
 
----
-
-## 🗺 Embedding Google Maps
-
-In `pages/enquiry.html`, find `.map-placeholder` and replace it with:
-```html
-<iframe
-  src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
-  width="100%" height="300" style="border:0;border-radius:6px;"
-  allowfullscreen="" loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-```
-Get the embed code: Google Maps → Share → Embed a map → Copy HTML.
-
----
-
-## ✏️ Updating School Information
-
-All school details appear in every HTML file. The key information blocks are:
-
-| Information          | Location in HTML              |
-|----------------------|-------------------------------|
-| Topbar address/phone | `.topbar` div (top of `<body>`) |
-| Header school name   | `.school-identity` in `<header>` |
-| Kannada name         | `.kannada-name` span            |
-| Location text        | `.location` paragraph           |
-| Footer contact       | `.footer-col` (last column)     |
-| Phone links          | `href="tel:XXXXXXXXXX"`         |
-
-To update, use **Find & Replace** in your code editor (VS Code, Notepad++):
-- Search: `Paltya Tanda, Seri Cross`
-- Replace with your updated address
-
----
-
-## 📱 Responsive Breakpoints
-
-| Breakpoint | Layout Changes                                      |
-|------------|-----------------------------------------------------|
-| < 960px    | 4-col grids become 2-col; about section stacks      |
-| < 640px    | Most grids become 1-col; hamburger nav activates    |
-
----
-
-## 🔧 Customisation Guide
-
-### Change Primary Color
-In `css/style.css`, find `:root` and update `--orange`:
-```css
-:root {
-  --orange: #E8600A;  ← Change this to your preferred color
-}
-```
-
-### Add a New Page
-1. Copy `pages/blog.html` as a template
-2. Update `<title>`, `<meta description>`, nav `class="active"` link
-3. Change `href` paths: `../css/style.css`, `../js/main.js`
-4. Add your content inside `<!-- MAIN SECTION -->`
-5. Add a link to the new page in every other page's `<nav>`
-
-### Add a New Blog Post
-Copy any `.blog-card` block in `pages/blog.html` and update:
-- `.blog-cat` — category label
-- `.blog-date` — date of post
-- `h3` — post title
-- `p` — short description
-- `.blog-link href` — link to full post (or `#` for now)
-
----
-
-## 📞 School Contact Details
-
-| Item           | Details                                          |
-|----------------|--------------------------------------------------|
-| **School Name** | Dr. Ramarao Maharaj Primary School              |
-| **Kannada**     | ಡಾ. ರಾಮರಾವ ಮಹಾರಾಜ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ        |
-| **Address**     | Paltya Tanda, Seri Cross, Salgar Basantpur       |
-| **Taluk**       | Chincholi                                        |
-| **District**    | Kalaburagi, Karnataka                            |
-| **Phone 1**     | 7483586279                                       |
-| **Phone 2**     | 9741617557                                       |
-| **Phone 3**     | 9321771082                                       |
-| **Head Teacher** | Sri Motiram Nayak (Adhyapaka)                  |
-| **Medium**      | Kannada                                          |
-| **Classes**     | LKG to 8th Standard                             |
-| **Organisation**| Jagath Janani Krishi & Gramina Abhivrudhi Samsthe (R) |
-
----
-
-## 🏗 Built With
-
-- **HTML5** — semantic, accessible markup
-- **CSS3** — custom properties, grid, flexbox
-- **Vanilla JavaScript** — no frameworks
-- **Google Fonts** — Poppins + Noto Sans Kannada
-
----
-
-*© 2026 Dr. Ramarao Maharaj Primary School. All rights reserved.*
+<div align="center">
+  <br/>
+  <p><em>Shaping Futures, Building Character</em></p>
+</div>
